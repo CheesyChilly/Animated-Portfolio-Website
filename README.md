@@ -1,2 +1,4 @@
-# Animated Portfolio Website
- Animated Portfolio Website
+# Portfolio
+
+Animated portfolio website with React and Framer Motion.
+
