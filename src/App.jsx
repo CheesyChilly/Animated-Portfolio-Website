@@ -1,6 +1,7 @@
 import "./app.scss";
 import Navbar from "./components/navbar/Navbar";
-// import Test from "./test";
+import Hero from "./components/hero/Hero";
+import Parallax from "./components/parallax/Parallax";
 
 // import { motion } from "framer-motion";
 
@@ -9,8 +10,9 @@ const App = () => {
 		<div>
 			<section id="Home">
 				<Navbar />
+				<Hero/>
 			</section>
-			<section id="Skills">Parallax1</section>
+			<section id="Skills"><Parallax/></section>
 			<section>Skills</section>
 			<section id="Projects">Parallax2</section>
 			<section>Project1</section>
