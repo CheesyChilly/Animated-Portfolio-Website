@@ -1,9 +1,13 @@
 @import "src/color.scss";
 
+$colvar: var(--primary);
+
+
 .hero {
 	height: calc(100vh - 100px);
 	overflow: hidden;
-	background: linear-gradient(180deg, var(--bgcolor), var(--bgcolor2));
+	background: linear-gradient(180deg, var(--bgcolor), var(--bgcolor-lighter));
+	// background-color: var(--bgcolor);
 	position: relative;
 
 	.wrapper {
