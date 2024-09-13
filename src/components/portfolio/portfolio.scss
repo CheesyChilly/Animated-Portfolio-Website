@@ -1,0 +1,23 @@
+@import "src/color.scss";
+
+.portfolio{
+    position: relative;
+    .progress{
+        position: sticky;
+        top:0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: var(--secondary);
+        font-size: 36px;
+        h1{
+
+        }
+
+        .progressBar{
+            height: 10px;
+            background-color: var(--primary);
+           
+        }
+    }
+}

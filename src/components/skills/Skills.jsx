@@ -1,7 +1,7 @@
 import "./skills.scss";
 import "/src/color.scss";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const variants = {
 	initial: {
@@ -23,15 +23,23 @@ const variants = {
 const Skills = () => {
 	const ref = useRef();
 	const isInView = useInView(ref, { margin: "-100px" });
+	const controls = useAnimation();
+
+	useEffect(() => {
+		if (isInView) {
+			controls.start("animate");
+		} else {
+			controls.start("initial");
+		}
+	}, [isInView, controls]);
 
 	return (
 		<motion.div
 			className="skills"
 			variants={variants}
 			initial="initial"
-			// whileInView="animate"
 			ref={ref}
-			animate={isInView && "animate"}>
+			animate={controls}>
 			<motion.div className="textContainer" variants={variants}>
 				<p>
 					I focus on Front end development <br />
