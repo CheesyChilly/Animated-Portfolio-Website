@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
 
 // import { motion } from "framer-motion";
 
@@ -24,7 +25,7 @@ const App = () => {
 				<Parallax type="projects" />
 			</section>
 			<Portfolio/>
-			<section id="Contact">Contact</section>
+			<section id="Contact"><Contact/></section>
 		</div>
 	);
 };

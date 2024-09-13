@@ -1,23 +1,73 @@
 @import "src/color.scss";
 
-.portfolio{
-    position: relative;
-    .progress{
-        position: sticky;
-        top:0;
-        left: 0;
-        padding-top: 50px;
-        text-align: center;
-        color: var(--secondary);
-        font-size: 36px;
-        h1{
+.portfolio {
+	position: relative;
+	.progress {
+		position: sticky;
+		top: 0;
+		left: 0;
+		padding-top: 50px;
+		text-align: center;
+		color: var(--secondary);
+		font-size: 36px;
 
-        }
+		.progressBar {
+			height: 10px;
+			background-color: var(--primary);
+		}
+	}
 
-        .progressBar{
-            height: 10px;
-            background-color: var(--primary);
-           
-        }
-    }
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+        overflow: hidden;
+
+		.wrapper {
+			max-width: 1366px;
+			height: 100%;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			gap: 50px;
+
+			.imageContainer {
+				flex: 1;
+				height: 50%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.textContainer {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+
+				h2 {
+					font-size: 72px;
+				}
+
+				p {
+					color: var(--primary);
+					font-size: 20px;
+				}
+
+				button {
+					background-color: var(--secondary);
+					border: none;
+					border-radius: 10px;
+					padding: 15px;
+					width: 200px;
+					font-weight: 500;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }

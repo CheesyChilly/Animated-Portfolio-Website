@@ -1,0 +1,67 @@
+@import "src/color.scss";
+
+.contact {
+	height: 100%;
+	max-width: 1366px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	gap: 50px;
+
+	.textContainer {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+
+		h1 {
+			font-size: 100px;
+			line-height: 90px;
+		}
+
+		.itemWrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			span {
+				font-weight: 300;
+			}
+		}
+	}
+
+	.formContainer {
+		flex: 1;
+        position: relative;
+
+        .phoneSvg{
+            stroke: var(--secondary);
+            position: absolute;
+            margin: auto;
+        }
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			input,
+			textarea {
+				padding: 20px;
+				background-color: transparent;
+				color: var(--primary);
+				border: 1px solid var(--primary);
+				border-radius: 10px;
+			}
+
+			button {
+				padding: 20px;
+				border: none;
+				background-color: var(--secondary);
+				cursor: pointer;
+				color: var(--bgcolor);
+				font-weight: 600;
+				border-radius: 10px;
+			}
+		}
+	}
+}
