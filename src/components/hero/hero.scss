@@ -1,7 +1,9 @@
 @import "src/color.scss";
 
 $colvar: var(--primary);
-
+html {
+    scroll-behavior: smooth;
+}
 
 .hero {
 	height: calc(100vh - 100px);
@@ -35,21 +37,25 @@ $colvar: var(--primary);
 
 			.buttons {
                 cursor: default;
-				button {
-					padding: 20px;
+				z-index: 9999;
+				a {
+					padding: 15px;
+					font-size: 15px;
 					border: 1px solid var(--primary);
 					border-radius: 10px;
                     background-color: transparent;
                     color: var(--primary);
                     margin-right: 20px;
                     cursor: pointer;
-                    // font-weight: 300;
+                    font-weight: 400;
+			
 				}
 
                 .button2{
                     background-color: var(--primary);
                     color: var(--secondary);
                     cursor: pointer;
+					font-weight: 500;
                 }
 			}
 

@@ -50,7 +50,7 @@ const Skills = () => {
 				</motion.div>
 				<motion.div className="titleContainer" variants={variants}>
 					<div className="title">
-						<img src="/people.webp" alt="" />
+						<img src="/abstract.png" alt="" />
 						<h1>
 							<motion.b
 								whileHover={{ color: "var(--secondary)" }}>
@@ -72,48 +72,75 @@ const Skills = () => {
 				</motion.div>
 				<motion.div className="listContainer" variants={variants}>
 					<div className="box">
-						<h2>Title</h2>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Nam culpa ratione, aliquid, ad omnis ab et
-							velit maiores laudantium a recusandae quae id
-							deleniti nemo. Expedita placeat praesentium voluptas
-							magni!
-						</p>
-						<button>More</button>
+						<h2>Front-End Development</h2>
+						<ul>
+							<li>Expertise in HTML, CSS, and JavaScript</li>
+							<li>
+								Focus on responsive design and UX/UI principles
+							</li>
+							<li>
+								Proficient in React for building user-friendly
+								interfaces
+							</li>
+							<li>
+								Skilled in designing wireframes and prototypes
+								using Figma
+							</li>
+						</ul>
+
+						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>Title</h2>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Nam culpa ratione, aliquid, ad omnis ab et
-							velit maiores laudantium a recusandae quae id
-							deleniti nemo. Expedita placeat praesentium voluptas
-							magni!
-						</p>
-						<button>More</button>
+						<h2>Back-End Development</h2>
+						<ul>
+							<li>
+								Skilled in server-side development with Node.js
+								and Express
+							</li>
+							<li>Experience with REST API integration</li>
+							<li>Database management using MongoDB</li>
+							<li>Focus on scalability and security</li>
+						</ul>
+						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>Title</h2>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Nam culpa ratione, aliquid, ad omnis ab et
-							velit maiores laudantium a recusandae quae id
-							deleniti nemo. Expedita placeat praesentium voluptas
-							magni!
-						</p>
-						<button>More</button>
+						<h2>Cybersecurity and Blockchain</h2>
+						<ul>
+							<li>
+								Strong understanding of cybersecurity
+								fundamentals
+							</li>
+							<li>
+								Knowledge of encryption and secure coding
+								practices
+							</li>
+							<li>
+								Familiar with blockchain technology and
+								decentralized systems
+							</li>
+						</ul>
+						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>Title</h2>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Nam culpa ratione, aliquid, ad omnis ab et
-							velit maiores laudantium a recusandae quae id
-							deleniti nemo. Expedita placeat praesentium voluptas
-							magni!
-						</p>
-						<button>More</button>
+						<h2>3D Modeling & Game Development</h2>
+						<ul>
+							<li>
+								Skilled in 3D modeling, texturing, and rendering
+								using Blender
+							</li>
+							<li>
+								Experience with creating assets for games and
+								animations
+							</li>
+							<li>
+								Proficient in game development with Godot engine
+							</li>
+							<li>
+								Knowledge of game design principles and
+								mechanics
+							</li>
+						</ul>
+						{/* <button>More</button> */}
 					</div>
 				</motion.div>
 			</motion.div>

@@ -19,16 +19,13 @@ const Navbar = () => {
 						href="https://www.linkedin.com/in/ankit-bose-62596a231/"
 						target="_blank"
 						rel="noopener noreferrer">
-						<img src="/linkedin.png" alt="" />
+						<img src="/linkedin-line.png" alt="" />
 					</a>
 					<a
 						href="https://github.com/CheesyChilly"
 						target="_blank"
 						rel="noopener noreferrer">
-						<img src="/github.png" alt="" />
-					</a>
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						<img src="/facebook.png" alt="" />
+						<img src="/github-line.png" alt="" />
 					</a>
 				</div>
 			</div>

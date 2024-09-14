@@ -1,5 +1,9 @@
 @import "src/color.scss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@
             gap: 20px;
 
             a{
-                font-size: 40px;
+                font-size: 45px;
             }
         }
     }

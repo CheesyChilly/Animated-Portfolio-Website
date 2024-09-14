@@ -1,4 +1,7 @@
 @import "src/color.scss";
+html {
+    scroll-behavior: smooth;
+}
 
 .navbar {
 	height: 100px;
@@ -21,8 +24,8 @@
 			gap: 20px;
 
 			img {
-				width: 25px;
-				height: 25px;
+				width: 35px;
+				height: 35px;
 			}
 		}
 	}
