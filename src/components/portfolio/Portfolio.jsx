@@ -1,31 +1,31 @@
-import "./portfolio.scss";
-import { useScroll, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
+import "./portfolio.scss";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
-const item = [
+const items = [
 	{
 		id: 1,
-		title: "project1",
-		img: "https://images.pexels.com/photos/28219391/pexels-photo-28219391/free-photo-of-the-dolomites-in-italy.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-		desc: "lorem ipdi jifdi  ohj oisdf ",
+		title: "React Commerce",
+		img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
 	},
 	{
 		id: 2,
-		title: "project2",
-		img: "https://images.pexels.com/photos/28318918/pexels-photo-28318918/free-photo-of-a-picnic-table-with-a-camera-cheese-and-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-		desc: "lorem ipdi jifdi  ohj oisdf ",
+		title: "Next.js Blog",
+		img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
 	},
 	{
 		id: 3,
-		title: "project3",
-		img: "https://images.pexels.com/photos/28318918/pexels-photo-28318918/free-photo-of-a-picnic-table-with-a-camera-cheese-and-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-		desc: "lorem ipdi jifdi  ohj oisdf ",
+		title: "Vanilla JS App",
+		img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
 	},
 	{
 		id: 4,
-		title: "project4",
-		img: "https://images.pexels.com/photos/28318918/pexels-photo-28318918/free-photo-of-a-picnic-table-with-a-camera-cheese-and-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-		desc: "lorem ipdi jifdi  ohj oisdf ",
+		title: "Music App",
+		img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
 	},
 ];
 
@@ -34,9 +34,9 @@ const Single = ({ item }) => {
 
 	const { scrollYProgress } = useScroll({
 		target: ref,
-        // offset:["start start", "end start"]
 	});
-	const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+
+	const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
 	return (
 		<section>
@@ -66,7 +66,7 @@ const Portfolio = () => {
 
 	const scaleX = useSpring(scrollYProgress, {
 		stiffness: 100,
-		damping: 20,
+		damping: 30,
 	});
 
 	return (
@@ -74,10 +74,10 @@ const Portfolio = () => {
 			<div className="progress">
 				<h1>Featured Works</h1>
 				<motion.div
-					style={{ scaleX: scaleX }}
+					style={{ scaleX }}
 					className="progressBar"></motion.div>
 			</div>
-			{item.map((item) => (
+			{items.map((item) => (
 				<Single item={item} key={item.id} />
 			))}
 		</div>
