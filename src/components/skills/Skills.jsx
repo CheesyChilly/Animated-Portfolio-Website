@@ -78,14 +78,8 @@ const Skills = () => {
 							<li>
 								Focus on responsive design and UX/UI principles
 							</li>
-							<li>
-								Proficient in React for building user-friendly
-								interfaces
-							</li>
-							<li>
-								Skilled in designing wireframes and prototypes
-								using Figma
-							</li>
+							<li>Proficient in React</li>
+							<li>Skilled in Figma</li>
 						</ul>
 
 						{/* <button>More</button> */}
@@ -93,13 +87,10 @@ const Skills = () => {
 					<div className="box">
 						<h2>Back-End Development</h2>
 						<ul>
-							<li>
-								Skilled in server-side development with Node.js
-								and Express
-							</li>
+							<li>Skilled in Node.js and Express</li>
 							<li>Experience with REST API integration</li>
 							<li>Database management using MongoDB</li>
-							<li>Focus on scalability and security</li>
+							<li>Experience in scalability and security</li>
 						</ul>
 						{/* <button>More</button> */}
 					</div>
