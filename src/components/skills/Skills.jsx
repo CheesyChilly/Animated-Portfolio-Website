@@ -56,7 +56,7 @@ const Skills = () => {
 								whileHover={{ color: "var(--secondary)" }}>
 								Creative
 							</motion.b>{" "}
-							ideas
+							<span>ideas</span>
 						</h1>
 					</div>
 					<div className="title">
@@ -65,14 +65,14 @@ const Skills = () => {
 								whileHover={{ color: "var(--secondary)" }}>
 								Steadily
 							</motion.b>{" "}
-							Expanding
+							<span>Expanding</span>
 						</h1>
 						<button>My Skills</button>
 					</div>
 				</motion.div>
 				<motion.div className="listContainer" variants={variants}>
 					<div className="box">
-						<h2>Front-End Development</h2>
+						<h2>Front-End</h2>
 						<ul>
 							<li>Expertise in HTML, CSS, and JavaScript</li>
 							<li>
@@ -85,7 +85,7 @@ const Skills = () => {
 						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>Back-End Development</h2>
+						<h2>Back-End</h2>
 						<ul>
 							<li>Skilled in Node.js and Express</li>
 							<li>Experience with REST API integration</li>
@@ -95,7 +95,7 @@ const Skills = () => {
 						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>Cybersecurity and Blockchain</h2>
+						<h2>Cybersecurity</h2>
 						<ul>
 							<li>
 								Strong understanding of cybersecurity
@@ -113,7 +113,7 @@ const Skills = () => {
 						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>3D Modeling & Game Development</h2>
+						<h2>Game Dev</h2>
 						<ul>
 							<li>
 								Skilled in 3D modeling, texturing, and rendering

@@ -38,16 +38,18 @@ html {
 			.buttons {
                 cursor: default;
 				z-index: 9999;
+				
 				a {
 					padding: 15px;
-					font-size: 15px;
+					font-size: 17px;
 					border: 1px solid var(--primary);
 					border-radius: 10px;
                     background-color: transparent;
                     color: var(--primary);
                     margin-right: 20px;
+					font-family: var(--sub-font);
                     cursor: pointer;
-                    font-weight: 400;
+                    font-weight: 450;
 			
 				}
 
@@ -55,7 +57,7 @@ html {
                     background-color: var(--primary);
                     color: var(--secondary);
                     cursor: pointer;
-					font-weight: 500;
+					font-weight: 700;
                 }
 			}
 
