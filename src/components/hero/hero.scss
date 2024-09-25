@@ -1,4 +1,5 @@
 @import "src/color.scss";
+@import "/src/app.scss";
 
 $colvar: var(--primary);
 html {
@@ -24,6 +25,11 @@ html {
 			flex-direction: column;
 			justify-content: center;
 			gap: 40px;
+
+			@include mobile{
+				width: 100%;
+				height: 50%;
+			}
 
 			h2 {
 				font-size: 30px;

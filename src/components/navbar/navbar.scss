@@ -1,6 +1,8 @@
 @import "src/color.scss";
+@import "/src/app.scss";
+
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .navbar {
@@ -14,10 +16,18 @@ html {
 		justify-content: space-between;
 		height: 100%;
 
+		@include mobile {
+			justify-content: flex-end;
+			padding: 20px;
+		}
+
 		span {
 			font-weight: bold;
-			font-size:x-large;
+			font-size: x-large;
 			font-family: var(--sub-font);
+			@include mobile {
+				display: none;
+			}
 		}
 
 		.social {

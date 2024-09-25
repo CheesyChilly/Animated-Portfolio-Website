@@ -90,7 +90,7 @@ const Skills = () => {
 							<li>Skilled in Node.js and Express</li>
 							<li>Experience with REST API integration</li>
 							<li>Database management using MongoDB</li>
-							<li>Experience in scalability and security</li>
+							
 						</ul>
 						{/* <button>More</button> */}
 					</div>
@@ -98,7 +98,7 @@ const Skills = () => {
 						<h2>Cybersecurity</h2>
 						<ul>
 							<li>
-								Strong understanding of cybersecurity
+								Proficient in cybersecurity
 								fundamentals
 							</li>
 							<li>
@@ -106,30 +106,25 @@ const Skills = () => {
 								practices
 							</li>
 							<li>
-								Familiar with blockchain technology and
-								decentralized systems
+								Familiar with blockchain technology
 							</li>
 						</ul>
 						{/* <button>More</button> */}
 					</div>
 					<div className="box">
-						<h2>Game Dev</h2>
+						<h2>3D art & Game Dev</h2>
 						<ul>
 							<li>
-								Skilled in 3D modeling, texturing, and rendering
+								Skilled in 3D modeling
 								using Blender
 							</li>
 							<li>
-								Experience with creating assets for games and
-								animations
+								Experience with creating assets for games
 							</li>
 							<li>
 								Proficient in game development with Godot engine
 							</li>
-							<li>
-								Knowledge of game design principles and
-								mechanics
-							</li>
+							
 						</ul>
 						{/* <button>More</button> */}
 					</div>
